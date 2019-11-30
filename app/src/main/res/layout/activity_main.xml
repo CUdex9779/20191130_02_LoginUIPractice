@@ -16,7 +16,7 @@
         android:textColor="#ffffff"
         android:text="login content"
         android:padding="10dp"
-        >
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,6 +82,8 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
+                android:visibility="gone"
                 android:text="VVIP회원"/>
 
 
@@ -104,13 +106,27 @@
              />
      </LinearLayout>
 
-
-        <Button
+        <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="login"
-            />
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="login"
+                />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
